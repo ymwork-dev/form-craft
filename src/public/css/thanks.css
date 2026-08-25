@@ -1,0 +1,53 @@
+.thanks-content {
+    position: relative;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    overflow: hidden;
+}
+
+.thanks-background {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+    z-index: 1;
+}
+
+.thanks-background span {
+    font-size: 160px;
+    font-weight: bold;
+    color: #f4f4f4;
+    font-family: 'serif';
+    white-space: nowrap;
+}
+
+.thanks-message {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
+
+.thanks-message p {
+    font-size: 18px;
+    color: #8b7969;
+    margin-bottom: 30px;
+}
+
+.btn-home {
+    display: inline-block;
+    padding: 10px 40px;
+    background-color: #8b7969;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.btn-home:hover {
+    opacity: 0.8;
+}

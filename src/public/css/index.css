@@ -1,0 +1,174 @@
+body {
+    background-color: #ffffff;
+    color: #8b7969;
+    font-family: 'serif';
+}
+
+.form-craft__content{
+    margin: 0 auto;
+    max-width: 900px;
+    padding: 15px 20px 60px;
+}
+
+.form-craft__heading {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.form-craft__heading h1 {
+    font-size: 32px;
+    font-weight: normal;
+    letter-spacing: 2px;
+}
+
+.form__group {
+    display: flex;
+    margin-bottom: 15px;
+    align-items: flex-start;
+}
+
+.form__group-title {
+    width: 35%;
+}
+
+.form__group-content {
+    width: 65%;
+}
+
+.form__label--item {
+    font-size: 16px;
+}
+
+.form__label--required {
+    color: #ffb6b6;
+    margin-left: 2px;
+}
+
+input,
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px 15px;
+    border: none;
+    background-color: #f4f4f4;
+    color: #333;
+    font-size: 14px;
+}
+
+::placeholder {
+    color: #ccc;
+}
+
+.form__input--name {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.form__input--name input {
+    flex: 1;
+    width: auto;
+}
+
+.form__input--tel {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+}
+
+.form__input--tel input {
+    flex: none;
+    width: 100%;
+}
+
+.tel-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.form__input--tel input {
+    width: 100%;
+}
+
+.tel-separator {
+    padding-top: 10px;
+    color: #333;
+}
+
+.form__error {
+    color: #ff0000;
+    font-size: 12px;
+    margin-top: 2px;
+    min-height: 15px;
+}
+
+.form__input--radio {
+    display: flex;
+    gap: 40px;
+    padding-top: 10px;
+    align-items: center;
+}
+
+.form__input--radio label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+input[type="radio"] {
+    margin: 0;
+    width: 18px;
+    height: 18px;
+    accent-color: #8b7969;
+}
+
+textarea {
+    height: 120px;
+}
+
+.form__button {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.form__button-submit {
+    width: 180px;
+    padding: 12px;
+    background-color: #8b7969;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.form__button-submit:hover {
+    background-color: #a38f7d;
+}
+
+.form__error {
+    color: #ff0000;
+    font-size: 12px;
+    margin-top: 2px;
+    min-height: 15px;
+}
+
+.form__error--flex {
+    display: flex;
+    gap: 15px;
+}
+
+.form__error--item {
+    flex: 1;
+    color: #ff0000;
+    font-size: 12px;
+}
+
+.form__error--tel {
+    margin-top: 2px;
+}
