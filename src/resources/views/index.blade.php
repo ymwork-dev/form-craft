@@ -57,7 +57,7 @@
                 </div>
                 <div class="form__group-content">
                     <div class="form__input--text">
-                        <input type="test" name="email" placeholder="例: test@example.com" value="{{ old('email') }}" />
+                        <input type="email" name="email" placeholder="例: test@example.com" value="{{ old('email') }}" />
                     </div>
                     <div class="form__error">
                         @error('email') {{ $message }} @enderror
