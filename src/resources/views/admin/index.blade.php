@@ -12,7 +12,7 @@
 <nav>
     <form action="/logout" method="post">
         @csrf
-        <button class="header-nav__button">logout</button>
+        <button class="header-nav__button">ログアウト</button>
     </form>
 </nav>
 @endsection
