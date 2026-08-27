@@ -4,7 +4,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 110px 20px;
+    padding: 125px 20px;
 }
 
 .login-header h1 {
