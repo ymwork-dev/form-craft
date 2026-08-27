@@ -37,7 +37,7 @@ services:
       - PMA_ARBITRARY=1
       - PMA_HOST=form-craft-db
       - PMA_USER=root
-      - PMA_PASSWORD=form_craft_pass
+      - PMA_PASSWORD=password
     ports:
       - "8080:80"
     depends_on:

@@ -49,6 +49,13 @@
                 @enderror
             </div>
 
+            <div class="form-group">
+                <label for="password_confirmation">パスワード（確認）</label>
+                <div class="form-input">
+                    <input type="password" name="password_confirmation" id="password_confirmation" placeholder="確認のためもう一度入力してください">
+                </div>
+            </div>
+
             <div class="form-btn">
                 <button type="submit" class="btn-register">登録</button>
             </div>

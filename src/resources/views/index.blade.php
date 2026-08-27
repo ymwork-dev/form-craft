@@ -74,24 +74,18 @@
                     <div class="form__input--tel">
                         <div class="tel-container">
                             <input type="tel" name="tel1" placeholder="080" value="{{ old('tel1') }}" />
-                            <div class="form__error">
-                                @error('tel1') {{ $message }} @enderror
-                            </div>
                         </div>
                         <span class="tel-separator">-</span>
                         <div class="tel-container">
                             <input type="tel" name="tel2" placeholder="1234" value="{{ old('tel2') }}" />
-                            <div class="form__error">
-                                @error('tel2') {{ $message }} @enderror
-                            </div>
                         </div>
                         <span class="tel-separator">-</span>
                         <div class="tel-container">
                             <input type="tel" name="tel3" placeholder="5678" value="{{ old('tel3') }}" />
-                            <div class="form__error">
-                                @error('tel3') {{ $message }} @enderror
-                            </div>
                         </div>
+                    </div>
+                    <div class="form__error">
+                        {{ $errors->first('tel1') ?: ($errors->first('tel2') ?: $errors->first('tel3')) }}
                     </div>
                 </div>
             </div>
