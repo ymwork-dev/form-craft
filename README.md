@@ -85,7 +85,7 @@ Webサーバー：Nginx 1.21.1
 
 ## URL
 
-アプリケーション：http://localhost/
+アプリケーション：http://localhost:8081/
 
 phpMyAdmin：http://localhost:8080
 
