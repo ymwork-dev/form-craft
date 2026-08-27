@@ -3,8 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\ContactRequest;
+use App\Mail\ContactThanksMail;
 use App\Models\Contact;
 use App\Models\Category;
+use Illuminate\Support\Facades\Mail;
 
 class ContactController extends Controller
 {
@@ -36,7 +38,9 @@ class ContactController extends Controller
         ]);
 
         $contact['tel'] = $request->tel1 . $request->tel2 . $request->tel3;
-        Contact::create($contact);
+        $created = Contact::create($contact);
+
+        Mail::to($created->email)->send(new ContactThanksMail($created));
 
         return view('thanks');
     }

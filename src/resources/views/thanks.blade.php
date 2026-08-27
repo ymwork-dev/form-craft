@@ -19,3 +19,11 @@
     </div>
 </div>
 @endsection
+
+@if(app()->environment('local'))
+@section('js')
+<script>
+    window.open('http://localhost:8025', '_blank');
+</script>
+@endsection
+@endif
