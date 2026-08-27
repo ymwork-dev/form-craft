@@ -7,7 +7,8 @@
 @section('content')
 <div class="thanks-content">
     <div class="thanks-background">
-        <span>Thank you</span>
+        <span>Thank You</span>
+        <span>So Much</span>
     </div>
 
     <div class="thanks-message">

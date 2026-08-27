@@ -81,7 +81,7 @@ class AdminController extends Controller
         $csvHeader = ['お名前', '性別', 'メールアドレス', 'お問い合わせの種類', 'お問い合わせ内容'];
         $genders = [1 => '男性', 2 => '女性', 3 => 'その他'];
 
-        $filename = "contacts_" . date('YmdHis') . ".csv";
+        $filename = "form-craft_" . date('YmdHis') . ".csv";
 
         $callback = function() use ($contacts, $csvHeader, $genders) {
             $file = fopen('php://output', 'w');

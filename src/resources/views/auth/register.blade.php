@@ -6,14 +6,14 @@
 
 @section('header-nav')
 <nav>
-    <a class="header-nav__button" href="/login">login</a>
+    <a class="header-nav__button" href="/login">ログイン</a>
 </nav>
 @endsection
 
 @section('content')
 <div class="register-content">
     <div class="register-header">
-        <h1>Register</h1>
+        <h1>新規登録</h1>
     </div>
 
     <div class="register-form-inner">

@@ -1,12 +1,13 @@
 .confirm-content {
     margin: 0 auto;
     max-width: 900px;
-    padding: 20px 20px 60px;
-    color: #8b7969;
+    padding: 20px 20px 40px;
+    color: var(--color-primary-dark);
+    font-weight: 500;
 }
 
 .confirm-header {
-    margin-bottom: 30px;
+    margin-bottom: 18px;
     text-align: center;
 }
 
@@ -17,9 +18,7 @@
 }
 
 .confirm-table-inner {
-    border: 1px solid #e0e0e0;
-    border-radius: 2px;
-    overflow: hidden;
+    border-top: 2px solid var(--color-primary);
     margin-bottom: 20px;
 }
 
@@ -32,25 +31,25 @@
 
 .confirm-table th,
 .confirm-table td {
-    border-bottom: 1px solid #e0e0e0;
-    padding: 20px 30px;
+    border-bottom: 1px solid #ddd;
+    padding: 16px 12px;
 }
 
 .confirm-table th {
     width: 30%;
-    background-color: #bfa694;
-    color: #ffffff;
+    background: none;
+    color: var(--color-primary-dark);
     text-align: left;
-    padding: 20px 30px;
-    font-weight: normal;
-    border-bottom: 1px solid #edecec;
+    padding: 16px 12px;
+    font-weight: 600;
+    border-bottom: 1px solid #ddd;
 }
 
 .confirm-table td {
     width: 70%;
-    background-color: #ffffff;
-    padding: 20px 30px;
-    border-bottom: 1px solid #edecec;
+    background: none;
+    padding: 16px 12px;
+    border-bottom: 1px solid #ddd;
     color: #333333;
 }
 
@@ -60,7 +59,7 @@
 }
 
 .form-actions {
-    margin-top: 50px;
+    margin-top: 28px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -69,24 +68,30 @@
 
 .btn-submit {
     width: 120px;
-    padding: 10px;
-    background-color: #8b7969;
+    padding: 12px;
+    background: linear-gradient(180deg, var(--color-primary-light), var(--color-primary));
     color: #fff;
     border: none;
+    border-radius: 8px;
     cursor: pointer;
     font-size: 16px;
+    box-shadow: 0 4px 10px rgba(150, 129, 74, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.3);
+    transition: box-shadow 0.2s, transform 0.1s;
 }
 
 .btn-fix {
     background: none;
     border: none;
-    color: #8b7969;
+    color: var(--color-primary-dark);
     text-decoration: underline;
     cursor: pointer;
     font-size: 14px;
 }
 
-.btn-submit:hover,
+.btn-submit:hover {
+    box-shadow: 0 6px 14px rgba(150, 129, 74, 0.45), inset 0 1px 0 rgba(255, 255, 255, 0.4);
+}
+
 .btn-fix:hover {
     opacity: 0.8;
 }
