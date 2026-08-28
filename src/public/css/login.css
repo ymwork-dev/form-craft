@@ -71,6 +71,19 @@
     margin-top: 5px;
 }
 
+.demo-info {
+    margin-top: 24px;
+    padding-top: 16px;
+    border-top: 1px solid #ddd;
+    text-align: center;
+    color: #666;
+    font-size: 13px;
+}
+
+.demo-info p {
+    margin: 2px 0;
+}
+
 ::placeholder {
     color: #999;
 }

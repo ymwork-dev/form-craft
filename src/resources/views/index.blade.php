@@ -97,7 +97,7 @@
                 </div>
                 <div class="form__group-content">
                     <div class="form__input--text">
-                        <input type="text" name="address" placeholder="例: 東京都渋谷区千駄ヶ谷1-2-3" value="{{ old('address') }}" />
+                        <input type="text" name="address" placeholder="例: 東京都千代田区丸の内1-1-1" value="{{ old('address') }}" />
                     </div>
                     <div class="form__error">
                         @error('address') {{ $message }} @enderror
@@ -111,7 +111,7 @@
                 </div>
                 <div class="form__group-content">
                     <div class="form__input--text">
-                        <input type="text" name="building" placeholder="例: 千駄ヶ谷マンション101" value="{{ old('building') }}" />
+                        <input type="text" name="building" placeholder="例: 丸の内ビル101" value="{{ old('building') }}" />
                     </div>
                 </div>
             </div>

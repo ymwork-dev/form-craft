@@ -47,6 +47,12 @@
                 <button type="submit" class="btn-login">ログイン</button>
             </div>
         </form>
+
+        <div class="demo-info">
+            <p>デモ用アカウント</p>
+            <p>Email: demo@example.com</p>
+            <p>Password: demo1234</p>
+        </div>
     </div>
 </div>
 @endsection
