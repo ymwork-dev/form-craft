@@ -19,7 +19,12 @@ class ContactController extends Controller
 
     public function confirm(ContactRequest $request)
     {
-        $contact = $request->all();
+        // まだ保存はしないが、Contactモデルに詰め替えることで
+        // gender_label のようなモデルのアクセサをこの確認画面でも使えるようにする
+        $contact = new Contact($request->all());
+        $contact->tel1 = $request->tel1;
+        $contact->tel2 = $request->tel2;
+        $contact->tel3 = $request->tel3;
         $category = Category::find($contact['category_id']);
         $category_content = $category ? $category->content : '';
 

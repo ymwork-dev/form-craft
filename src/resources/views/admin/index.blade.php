@@ -81,10 +81,9 @@
             </thead>
             <tbody>
                 @foreach($contacts as $contact)
-                @php $genders = [1 => '男性', 2 => '女性', 3 => 'その他']; @endphp
                 <tr>
                     <td>{{ $contact->first_name }}　{{ $contact->last_name }}</td>
-                    <td>{{ $genders[$contact->gender] }}</td>
+                    <td>{{ $contact->gender_label }}</td>
                     <td>{{ $contact->email }}</td>
                     <td>{{ $contact->category->content }}</td>
                     <td>
@@ -92,7 +91,7 @@
                         <button class="btn-detail js-modal-open"
                             data-first-name="{{ $contact->first_name }}"
                             data-last-name="{{ $contact->last_name }}"
-                            data-gender="{{ $genders[$contact->gender] }}"
+                            data-gender="{{ $contact->gender_label }}"
                             data-email="{{ $contact->email }}"
                             data-tel="{{ str_replace('-', '', $contact->tel) }}"
                             data-address="{{ $contact->address }}"

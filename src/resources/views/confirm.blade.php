@@ -25,11 +25,7 @@
                 <tr>
                     <th>性別</th>
                     <td>
-                        @php
-                            // tinyintをラベルに変換
-                            $genders = [1 => '男性', 2 => '女性', 3 => 'その他'];
-                        @endphp
-                        {{ $genders[$contact['gender']] }}
+                        {{ $contact['gender_label'] }}
                         <input type="hidden" name="gender" value="{{ $contact['gender'] }}">
                     </td>
                 </tr>
