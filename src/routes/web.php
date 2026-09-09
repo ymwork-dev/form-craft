@@ -2,11 +2,15 @@
 
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\DemoLoginController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', [ContactController::class, 'index']);
 Route::post('/confirm', [ContactController::class, 'confirm']);
 Route::post('/thanks', [ContactController::class, 'store'])->name('contacts.store');
+
+// 会員登録なしで管理画面を試せる「かんたんログイン」
+Route::post('/demo-login', [DemoLoginController::class, 'store'])->name('demo-login');
 
 Route::middleware('auth')->group(function () {
     Route::get('/admin', [AdminController::class, 'index'])->name('admin.index');

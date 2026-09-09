@@ -51,33 +51,38 @@ body {
 
 .header__inner button,
 .header__inner a.btn {
-    background: linear-gradient(180deg, #fff, var(--color-tint));
-    color: var(--color-primary);
-    border: none;
+    background: #fff;
+    color: var(--color-primary-dark);
+    border: 1px solid var(--color-primary);
     border-radius: 6px;
     padding: 9px 18px;
     text-decoration: none;
     cursor: pointer;
     font-size: 14px;
-    box-shadow: 0 1px 3px rgba(150, 129, 74, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.6);
-    transition: box-shadow 0.2s;
+    font-weight: 600;
+    box-shadow: 0 1px 3px rgba(150, 129, 74, 0.15);
+    transition: background-color 0.2s, color 0.2s;
 }
 
 .header-nav__button {
     display: inline-block;
-    background: linear-gradient(180deg, #fff, var(--color-tint));
-    color: var(--color-primary);
+    background: #fff;
+    color: var(--color-primary-dark);
     text-decoration: none;
     padding: 8px 22px;
-    border: none;
+    border: 1px solid var(--color-primary);
     border-radius: 6px;
     cursor: pointer;
     font-size: 14px;
-    box-shadow: 0 1px 3px rgba(150, 129, 74, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.6);
-    transition: box-shadow 0.2s;
+    font-weight: 600;
+    box-shadow: 0 1px 3px rgba(150, 129, 74, 0.15);
+    transition: background-color 0.2s, color 0.2s;
 }
 
+.header__inner button:hover,
+.header__inner a.btn:hover,
 .header-nav__button:hover {
-    box-shadow: 0 3px 8px rgba(150, 129, 74, 0.25), inset 0 1px 0 rgba(255, 255, 255, 0.7);
+    background: var(--color-primary);
+    color: #fff;
 }
 

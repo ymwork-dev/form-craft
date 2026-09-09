@@ -17,7 +17,7 @@ class DatabaseSeeder extends Seeder
         \App\Models\Contact::factory(35)->create();
 
         User::firstOrCreate(
-            ['email' => 'demo@example.com'],
+            ['email' => User::DEMO_EMAIL],
             [
                 'name' => 'デモユーザー',
                 'password' => Hash::make('demo1234'),

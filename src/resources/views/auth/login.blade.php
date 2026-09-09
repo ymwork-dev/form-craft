@@ -48,10 +48,12 @@
             </div>
         </form>
 
-        <div class="demo-info">
-            <p>デモ用アカウント</p>
-            <p>Email: demo@example.com</p>
-            <p>Password: demo1234</p>
+        <div class="demo-login">
+            <p class="demo-login__note">会員登録なしで管理画面をお試しいただけます</p>
+            <form action="{{ route('demo-login') }}" method="POST">
+                @csrf
+                <button type="submit" class="btn-demo-login">デモ用アカウントでログイン</button>
+            </form>
         </div>
     </div>
 </div>
