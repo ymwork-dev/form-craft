@@ -13,7 +13,7 @@ class DemoLoginTest extends TestCase
     use RefreshDatabase;
 
     #[Test]
-    public function ログイン画面にかんたんログインボタンが表示される(): void
+    public function ログイン画面にデモ用ログインボタンが表示される(): void
     {
         $response = $this->get('/login');
 
@@ -22,7 +22,7 @@ class DemoLoginTest extends TestCase
     }
 
     #[Test]
-    public function かんたんログインでパスワードなしでログインし管理画面に遷移する(): void
+    public function デモ用ログインでパスワードなしでログインし管理画面に遷移する(): void
     {
         $user = User::factory()->create([
             'email' => User::DEMO_EMAIL,
