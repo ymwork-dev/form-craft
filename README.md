@@ -73,6 +73,28 @@ docker compose exec php chmod -R 777 storage bootstrap/cache
 docker compose exec -u 1000 php php artisan migrate --seed
 ```
 
+## ポートフォリオ公開用の機能
+
+### かんたんログイン
+
+ログイン画面の「デモ用アカウントでログイン」ボタンから、会員登録なしで管理画面を試せます。
+（デモアカウント: `demo@example.com` — メールアドレスは `app/Models/User.php` の `DEMO_EMAIL` 定数で管理）
+
+### デモ環境の定期リセット
+
+`demo:reset` コマンドが `migrate:fresh --seed` を実行し、データベースを初期状態へ戻します。
+`routes/console.php` で毎日0時に実行するよう登録済み。本番サーバーで動かすには crontab に次の1行を追加します。
+
+```
+* * * * * cd /path/to/form-craft/src && php artisan schedule:run >> /dev/null 2>&1
+```
+
+手動で実行する場合:
+
+```
+docker compose exec -u 1000 php php artisan demo:reset
+```
+
 ## 使用技術（実行環境）
 
 フレームワーク: Laravel 13.4.0x
