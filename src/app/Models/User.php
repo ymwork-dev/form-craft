@@ -11,7 +11,7 @@ class User extends Authenticatable
     use HasFactory, Notifiable;
 
     // ポートフォリオ公開用のデモアカウント。
-    // シーダーとかんたんログイン(DemoLoginController)がこの値を参照する。
+    // シーダーとデモ用ログイン(DemoLoginController)がこの値を参照する。
     public const DEMO_EMAIL = 'demo@example.com';
 
     protected $fillable = [

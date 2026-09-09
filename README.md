@@ -75,7 +75,7 @@ docker compose exec -u 1000 php php artisan migrate --seed
 
 ## ポートフォリオ公開用の機能
 
-### かんたんログイン
+### デモ用ログイン
 
 ログイン画面の「デモ用アカウントでログイン」ボタンから、会員登録なしで管理画面を試せます。
 （デモアカウント: `demo@example.com` — メールアドレスは `app/Models/User.php` の `DEMO_EMAIL` 定数で管理）

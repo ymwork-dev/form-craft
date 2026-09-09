@@ -9,7 +9,7 @@ Route::get('/', [ContactController::class, 'index']);
 Route::post('/confirm', [ContactController::class, 'confirm']);
 Route::post('/thanks', [ContactController::class, 'store'])->name('contacts.store');
 
-// 会員登録なしで管理画面を試せる「かんたんログイン」
+// 会員登録なしで管理画面を試せる「デモ用ログイン」
 Route::post('/demo-login', [DemoLoginController::class, 'store'])->name('demo-login');
 
 Route::middleware('auth')->group(function () {
