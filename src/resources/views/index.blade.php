@@ -111,7 +111,7 @@
                 </div>
                 <div class="form__group-content">
                     <div class="form__input--text">
-                        <input type="text" name="building" placeholder="例: 都庁第一本庁舎" value="{{ old('building') }}" />
+                        <input type="text" name="building" value="{{ old('building') }}" />
                     </div>
                 </div>
             </div>
