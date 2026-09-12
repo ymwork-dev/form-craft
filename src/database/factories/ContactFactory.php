@@ -29,7 +29,7 @@ class ContactFactory extends Factory
             'gender' => fake()->numberBetween(1, 3),
             'email' => fake()->safeEmail(),
             'tel' => fake()->phoneNumber(),
-            'address' => fake()->address(),
+            'address' => '東京都新宿区西新宿2-8-1',
             'building' => fake()->secondaryAddress(),
             'detail' => fake()->randomElement($this->details),
         ];
