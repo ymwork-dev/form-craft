@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('css')
-<link rel="stylesheet" href="{{ asset('css/admin.css') }}">
+@vite(['resources/css/admin.css'])
 @endsection
 
 @section('js')

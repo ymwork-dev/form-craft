@@ -49,6 +49,10 @@ cd ..
 docker compose up -d
 ```
 
+> **補足**
+>
+> docker compose up -d を実行すると、node コンテナで npm install と Vite開発サーバー（npm run dev）が自動的に実行されます。そのため、追加で npm install や npm run dev を実行する必要はありません。
+
 #### PHPライブラリのインストール
 
 ```

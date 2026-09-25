@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('css')
-    <link rel="stylesheet" href="{{ asset('css/confirm.css') }}">
+    @vite(['resources/css/confirm.css'])
 @endsection
 
 @section('content')
