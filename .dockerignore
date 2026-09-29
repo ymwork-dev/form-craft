@@ -1,0 +1,23 @@
+# 手元のDBのデータ（容量が大きく、手元専用）
+docker/mysql/data
+
+# 手元でインストールしたもの（イメージの中で入れ直す）
+src/vendor
+src/node_modules
+
+# 手元専用の設定（パスワードなどが入っている）
+src/.env
+
+# 手元の開発サーバー用の目印とビルド結果
+src/public/hot
+src/public/build
+
+# 手元で作られたキャッシュとログ
+src/bootstrap/cache/*.php
+src/storage/logs/*
+src/storage/framework/cache/*
+src/storage/framework/sessions/*
+src/storage/framework/views/*
+src/.phpunit.result.cache
+
+.git
