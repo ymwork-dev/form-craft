@@ -23,7 +23,7 @@ jobs:
           extensions: pdo_mysql
 
       # Composerで依存パッケージをインストール（seederがFakerを使うので、テスト用パッケージも入れる）
-        name: Install dependencies
+      - name: Install dependencies
         run: composer install --no-interaction --prefer-dist
 
       # 公開デモのDB（Aiven）につないで、デモデータを初期状態に戻す
