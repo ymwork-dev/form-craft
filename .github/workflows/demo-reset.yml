@@ -2,8 +2,8 @@ name: Demo Reset
 
 on:
   schedule:
-    # 毎日 日本時間の0時に実行（GitHubの時刻はUTCなので、9時間引いた15時を書く）
-    - cron: '0 15 * * *'
+    # 毎日 日本時間の5時に実行（GitHubの時刻はUTCなので、9時間引いた前日の20時を書く）
+    - cron: '0 20 * * *'
   # Actionsの画面から手動でも実行できるようにする
   workflow_dispatch:
 
