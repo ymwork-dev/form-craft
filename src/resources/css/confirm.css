@@ -96,3 +96,29 @@
     opacity: 0.8;
 }
 
+
+/* スマホ幅(768px以下)の確認画面: 余白と文字を小さくし、長いメールアドレスは折り返す */
+@media (max-width: 768px) {
+    .confirm-content {
+        padding: 20px 16px 40px;
+    }
+
+    .confirm-header h1 {
+        font-size: 24px;
+    }
+
+    .confirm-table th,
+    .confirm-table td {
+        padding: 12px 8px;
+        font-size: 14px;
+    }
+
+    .confirm-table th {
+        width: 35%;
+    }
+
+    .confirm-table td {
+        width: 65%;
+        overflow-wrap: anywhere;
+    }
+}

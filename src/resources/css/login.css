@@ -111,3 +111,14 @@
 ::placeholder {
     color: #999;
 }
+
+/* スマホ幅(768px以下)のログイン画面 */
+@media (max-width: 768px) {
+    .login-content {
+        padding: 40px 16px;
+    }
+
+    .login-form-inner {
+        padding: 32px 24px;
+    }
+}

@@ -75,3 +75,14 @@
 ::placeholder {
     color: #999;
 }
+
+/* スマホ幅(768px以下)の会員登録画面 */
+@media (max-width: 768px) {
+    .register-content {
+        padding: 24px 16px;
+    }
+
+    .register-form-inner {
+        padding: 32px 24px;
+    }
+}

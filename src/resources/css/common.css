@@ -86,3 +86,24 @@ body {
     color: #fff;
 }
 
+
+/* スマホ幅(768px以下)のヘッダー */
+@media (max-width: 768px) {
+    .header {
+        height: auto;
+        padding: 16px 0;
+    }
+
+    .header__inner {
+        padding: 0 16px;
+    }
+
+    .header__logo {
+        font-size: 32px;
+    }
+
+    .header__inner nav,
+    .header__inner .header-nav {
+        right: 16px;
+    }
+}

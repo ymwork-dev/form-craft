@@ -55,3 +55,18 @@
 .btn-home:hover {
     box-shadow: 0 6px 14px rgba(150, 129, 74, 0.45), inset 0 1px 0 rgba(255, 255, 255, 0.4);
 }
+
+/* スマホ幅(768px以下)の完了画面 */
+@media (max-width: 768px) {
+    .thanks-background span {
+        font-size: 56px;
+    }
+
+    .thanks-message {
+        padding: 0 16px;
+    }
+
+    .thanks-message p {
+        font-size: 18px;
+    }
+}
